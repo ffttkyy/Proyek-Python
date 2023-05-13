@@ -1,0 +1,31 @@
+import datetime as dt
+
+print("Progman menentukan umur")
+print("Input Tanggal, Bulan, dan Tahun\n")
+
+#menentukan hari ini
+hari_ini = dt.date.today()
+print(f"Hari ini : {hari_ini}\n")
+#print(f"Hari : {hari_ini%A}") menentukn berdasakn hari
+#input user
+tanggal = int(input("Tanggal : "))
+bulan = int(input("Bulan \t: "))
+tahun =int(input("Tahun \t: "))
+
+#tanggal lahir mu
+tgl_lahir = dt.date(tahun,bulan,tanggal)
+
+print(f"\nTanggal Lahir mu : {tgl_lahir}")
+
+#menentukan berdasakan hari
+umur_hari = hari_ini - tgl_lahir
+#menentukan berdasakn tahun 
+umur_tahun = umur_hari.days // 365
+#menentukan umur sisa berdasarkan bulan
+umur_bulan_sisa = (umur_hari.days % 365) // 30
+
+print(f"Lama hidup : {umur_hari}") 
+print(f"Umur : {umur_tahun} Tahun, {umur_bulan_sisa} Bulan")
+
+#berdasarkan hari
+#print(f"hari : {tgl_lahir%A}")

@@ -1,0 +1,29 @@
+#Latihan 
+#Devp R
+#Program Kalkulator Sederhana
+
+print("\t\t\t"+20*"=")
+print("\t\t\t Kalkulator Sederhana")
+print("\t\t\t"+20*"="+"\n")
+
+angka1 = float(input("Masukan angka 1 : "))
+operator = input("Masukan operator (+, -, x, /) : ")
+angka2 = float(input("Masukan angka 2 : "))
+
+#percabangan
+if operator == "+":
+	hasil = angka1 + angka2
+	print(f"Hasil : {hasil}")
+elif operator == "-":
+	hasil = angka1 - angka2
+	print(f"Hasil : {hasil}")
+elif operator == "x" or operator == "*":
+	hasil = angka1*angka2
+	print(f"Hasil : {hasil}")
+elif operator == "/" or operator == "÷":
+	hasil = angka1/angka2
+	print(f"Hasil : {hasil}")
+else :
+	print("Masukin yang bener dongs... Aku kan jadi pusying!! Bakaaa!")
+	
+print("Sekiyan terima trakteeerr ehee^.^")
