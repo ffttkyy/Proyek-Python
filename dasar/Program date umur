@@ -1,6 +1,6 @@
 import datetime as dt
 
-print("Progman menentukan umur")
+print("Progman menentukan umur!")
 print("Input Tanggal, Bulan, dan Tahun\n")
 
 #menentukan hari ini
